@@ -3,11 +3,11 @@
 import time
 import tqdm
 
-configuration_number = 109.2008
-version = "0.3.5"
+configuration_number = 65535
+version = "0.3.6"
 
 print("Service package 1: ver. {}".format(version))
-time.sleep(0.5)
+time.sleep(0.8)
 print("Service package 1: start configuration ")
 time.sleep(0.5)
 for i in tqdm.tqdm(range(10000), ascii=True, desc="System check"):
