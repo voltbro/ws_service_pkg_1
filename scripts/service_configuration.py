@@ -2,9 +2,10 @@
 
 import time
 import tqdm
+import rospy
 
-configuration_number = 11.67
-version = "0.3.11"
+configuration_number = 128.619
+version = "0.3.13"
 
 print("Service package 1: ver. {}".format(version))
 time.sleep(0.8)
@@ -16,3 +17,4 @@ for i in tqdm.tqdm(range(10000), ascii=True, desc="System check"):
 print("Service package 1: successfully configured!")
 time.sleep(0.5)
 print("Service package 1: configuration checksum : {}".format(configuration_number))
+print("Service package 1: please push Ctrl+C to finish")
