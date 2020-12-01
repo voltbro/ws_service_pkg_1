@@ -1,17 +1,16 @@
-### Usage  
-
-Just run ./configure.sh
-  
+### Installation
 ```
-cd ~/ros_catkin_ws/src/ws_service_pkg_1/
-./run/configure.sh
+cd ~/ros_catkin_ws/src/
+git clone https://github.com/voltbro/ws_service_pkg_1.git
 ```
-
-### Updating  
-
-Add new code to ./scripts/service_configuration.py  
-Then recompile it:  
+### Compilation
 ```
-cd ~/ros_catkin_ws/src/ws_service_pkg_1/
-./scripts/compile.sh
+cd ~/ros_catkin_ws/
+sudo ./src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=Release --install-space /opt/ros/melodic --pkg=ws_service_pkg_1
+```
+### Usage
+
+Just run configure.launch
+```
+roslaunch ws_service_pkg_1 configure.launch
 ```
