@@ -12,5 +12,5 @@ sudo ./src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=Release 
 
 Just run configure.launch
 ```
-roslaunch ws_service_pkg_1 configure.launch
+roslaunch ws_service_pkg_1 start_configure.launch
 ```
